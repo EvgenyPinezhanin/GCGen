@@ -1,4 +1,4 @@
-set(target "${PROJECT_LIBRARY_SAMPLES}")
+set(target "${GCGEN_LIBRARY_FAMILIES}")
 
 file(GLOB hdrs "${CMAKE_CURRENT_SOURCE_DIR}/*/*.h*")
 file(GLOB srcs "${CMAKE_CURRENT_SOURCE_DIR}/*/*.cpp")

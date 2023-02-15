@@ -1,7 +1,7 @@
-set(target "${PROJECT_LIBRARY}")
+set(target "${GCGEN_LIBRARY}")
 
-file(GLOB hdrs "${PROJECT_INCLUDE}/*.h*")
-file(GLOB srcs "${PROJECT_SOURCE}/*.cpp")
+file(GLOB hdrs "${GCGEN_INCLUDE}/*.h*")
+file(GLOB srcs "${GCGEN_SOURCE}/*.cpp")
 
 add_library(${target} STATIC ${srcs} ${hdrs})
 target_link_libraries(${target} ${LIBRARY_DEPS})

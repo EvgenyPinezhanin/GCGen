@@ -220,7 +220,8 @@ int main()
   {
     cout << s << std::endl;
   }
-  system("pause");
+  int error = system("pause");
+  if (error == 0) cout << "Error in system(\"pause\")" << std::endl;
 
   return 0;
 }
